@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Savério | Full Stack Developer & AI Researcher</title>
+  <meta name="description" content="Desenvolvedor Full Stack e Pesquisador Tecnológico. Expertise em AWS, AI Agents, NestJS, Java, Python e automação inteligente." />
+  <meta property="og:title" content="Leonardo Savério | Full Stack Developer" />
+  <meta property="og:description" content="Desenvolvedor full stack e pesquisador tecnológico — AWS, AI Agents, Cloud Architecture." />
+  <meta property="og:type" content="website" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">LS<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#pesquisa">Pesquisa & IA</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" class="nav-cta">LinkedIn</a>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="inicio">
+    <!-- Grid background -->
+    <div class="hero-grid"></div>
+
+    <!-- Floating particles -->
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Portfólio · Desenvolvedor</span>
+      <h1 class="hero-name">Leonardo <span class="highlight">Savério</span></h1>
+      <p class="hero-role">
+        <span id="typedText" class="typed-text"></span>
+      </p>
+      <div class="hero-tags">
+        <span class="hero-tag">Full Stack</span>
+        <span class="hero-tag">Cloud AWS</span>
+        <span class="hero-tag">AI Agents</span>
+        <span class="hero-tag">DevOps</span>
+        <span class="hero-tag">Pesquisa</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#sobre" class="btn btn-primary">
+          <i class="fa-solid fa-user"></i> Sobre mim
+        </a>
+        <a href="#contato" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Contato
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:contato@leonardosaverio.dev" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE ==================== -->
+  <section id="sobre">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image Column -->
+        <div class="about-image-wrapper reveal">
+          <div class="about-image-frame">
+            <div class="about-avatar-placeholder">LS</div>
+          </div>
+          <div class="about-frame-accent"></div>
+          <div class="about-badge">
+            <span class="about-badge-num">5+</span>
+            <span class="about-badge-label">Anos de<br>Experiência</span>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-text">
+          <span class="section-eyebrow reveal">Sobre mim</span>
+          <h2 class="section-title reveal delay-1">Desenvolvimento, Pesquisa e<br>Inovação em cada camada.</h2>
+          <div class="section-divider reveal delay-2"></div>
+          <p class="about-bio reveal delay-2">
+            Desenvolvedor full stack e pesquisador tecnológico, atuo na criação de aplicações web escaláveis, 
+            arquiteturas em nuvem e soluções de automação inteligente. Meu trabalho integra engenharia de software, 
+            cloud computing e desenvolvimento prático em diferentes camadas da stack.
+          </p>
+          <p class="about-bio reveal delay-3">
+            No <strong>CIAg</strong>, colaboro com equipes multidisciplinares para transformar protótipos em soluções 
+            estáveis de produção, unindo pesquisa aplicada a práticas modernas de engenharia. Busco criar sistemas 
+            eficientes, escaláveis e alinhados à evolução contínua da tecnologia.
+          </p>
+
+          <div class="about-info-grid reveal delay-3">
+            <div class="about-info-item">
+              <span class="about-info-label">Nome</span>
+              <span class="about-info-value">Leonardo Savério</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Localização</span>
+              <span class="about-info-value">Brasil</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Atuação</span>
+              <span class="about-info-value">CIAg</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">LinkedIn</span>
+              <span class="about-info-value">
+                <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" style="color:var(--primary)">
+                  /in/leonardo-saverio
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="about-actions reveal delay-4">
+            <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" class="btn btn-dark">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STACK ==================== -->
+  <section id="stack">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: 4rem;">
+        <span class="section-eyebrow reveal">Tecnologias</span>
+        <h2 class="section-title reveal delay-1">Minha Stack Completa</h2>
+        <div class="section-divider reveal delay-2" style="margin: 0 auto 0;"></div>
+      </div>
+
+      <div class="stack-grid">
+
+        <div class="stack-card reveal">
+          <div class="stack-card-icon"><i class="fas fa-layer-group"></i></div>
+          <h3 class="stack-card-title">Front-End</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">Angular</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">RxJS</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal delay-1">
+          <div class="stack-card-icon"><i class="fas fa-server"></i></div>
+          <h3 class="stack-card-title">Back-End</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">NestJS</span>
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">Spring Boot</span>
+            <span class="stack-tag">Quarkus</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal delay-2">
+          <div class="stack-card-icon"><i class="fab fa-aws"></i></div>
+          <h3 class="stack-card-title">Cloud & Infra (AWS)</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">ECS</span>
+            <span class="stack-tag">Lambda</span>
+            <span class="stack-tag">Route 53</span>
+            <span class="stack-tag">S3</span>
+            <span class="stack-tag">CloudFront</span>
+            <span class="stack-tag">EC2</span>
+            <span class="stack-tag">Aurora</span>
+            <span class="stack-tag">RDS</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal delay-3">
+          <div class="stack-card-icon"><i class="fas fa-infinity"></i></div>
+          <h3 class="stack-card-title">DevOps & CI/CD</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">GitHub Actions</span>
+            <span class="stack-tag">CI/CD Pipelines</span>
+            <span class="stack-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal">
+          <div class="stack-card-icon"><i class="fas fa-robot"></i></div>
+          <h3 class="stack-card-title">IA & Automação</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">AI Agents</span>
+            <span class="stack-tag">Multi-Agent</span>
+            <span class="stack-tag">RAG</span>
+            <span class="stack-tag">Fine-tuning</span>
+            <span class="stack-tag">LangChain</span>
+            <span class="stack-tag">Chatbots</span>
+          </div>
+        </div>
+
+        <div class="stack-card reveal delay-1">
+          <div class="stack-card-icon"><i class="fas fa-database"></i></div>
+          <h3 class="stack-card-title">Banco de Dados</h3>
+          <div class="stack-tags">
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Aurora</span>
+            <span class="stack-tag">DynamoDB</span>
+            <span class="stack-tag">Redis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIÊNCIA ==================== -->
+  <section id="experiencia">
+    <div class="container">
+      <div style="margin-bottom: 4rem;">
+        <span class="section-eyebrow reveal">Trajetória</span>
+        <h2 class="section-title reveal delay-1">Experiência & Formação</h2>
+        <div class="section-divider reveal delay-2"></div>
+      </div>
+
+      <div class="experience-layout">
+
+        <!-- Profissional -->
+        <div>
+          <h3 class="exp-column-title reveal"><i class="fas fa-briefcase" style="color:var(--primary)"></i> Profissional</h3>
+          <div class="timeline">
+
+            <div class="timeline-item reveal delay-1">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">2023 — Presente</span>
+              <h4 class="timeline-title">Desenvolvedor Full Stack & Pesquisador</h4>
+              <p class="timeline-sub">CIAg</p>
+              <p class="timeline-desc">
+                Desenvolvimento completo de plataformas: definição de arquitetura, criação de APIs, 
+                interfaces e pipelines de deploy. Colaboração com equipes multidisciplinares para 
+                transformar protótipos em soluções de produção.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-2">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">Anterior</span>
+              <h4 class="timeline-title">Desenvolvedor Full Stack</h4>
+              <p class="timeline-sub">Projetos & Freelance</p>
+              <p class="timeline-desc">
+                Criação de APIs RESTful, implementação de pipelines CI/CD, containerização com Docker 
+                e arquiteturas event-driven em múltiplos clientes e projetos.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Educação / Certificações -->
+        <div>
+          <h3 class="exp-column-title reveal delay-1"><i class="fas fa-graduation-cap" style="color:var(--primary)"></i> Formação</h3>
+          <div class="timeline">
+
+            <div class="timeline-item reveal delay-1">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">Cloud & DevOps</span>
+              <h4 class="timeline-title">AWS Certified</h4>
+              <p class="timeline-sub">Amazon Web Services</p>
+              <p class="timeline-desc">
+                Expertise em serviços de Cloud AWS: ECS, Lambda, Route 53, S3, CloudFront, EC2, Aurora e RDS, 
+                com foco em arquiteturas escaláveis e de alta disponibilidade.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-2">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">Pesquisa Aplicada</span>
+              <h4 class="timeline-title">IA, Multi-Agent Systems & RAG</h4>
+              <p class="timeline-sub">CIAg — Pesquisa & Desenvolvimento</p>
+              <p class="timeline-desc">
+                Desenvolvimento de pipelines de automação inteligente com agentes de IA, 
+                sistemas multi-agent, fluxos baseados em RAG e processos de fine-tuning.
+              </p>
+            </div>
+
+            <div class="timeline-item reveal delay-3">
+              <div class="timeline-dot"></div>
+              <span class="timeline-period">Back-End & APIs</span>
+              <h4 class="timeline-title">NestJS, Spring Boot & Quarkus</h4>
+              <p class="timeline-sub">Especialização em Microsserviços</p>
+              <p class="timeline-desc">
+                Arquitetura de microsserviços com Node.js/NestJS, Java com Spring Boot e Quarkus, 
+                com padrões modernos de API e mensageria.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PESQUISA & IA ==================== -->
+  <section id="pesquisa">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: 4rem;">
+        <span class="section-eyebrow reveal" style="color:rgba(255,255,255,0.6)">Pesquisa Tecnológica</span>
+        <h2 class="section-title light reveal delay-1">Automação Inteligente & IA</h2>
+        <div class="section-divider reveal delay-2" style="margin: 0 auto 0;"></div>
+      </div>
+
+      <div class="research-grid">
+
+        <div class="research-card reveal">
+          <div class="research-card-icon">🤖</div>
+          <h3 class="research-card-title">Multi-Agent Systems</h3>
+          <p class="research-card-desc">
+            Desenvolvimento de sistemas multi-agente autônomos para automação de fluxos complexos, 
+            com orquestração de agentes especializados e coordenação de tarefas.
+          </p>
+        </div>
+
+        <div class="research-card reveal delay-1">
+          <div class="research-card-icon">🧠</div>
+          <h3 class="research-card-title">RAG & Fine-tuning</h3>
+          <p class="research-card-desc">
+            Arquitetura e implementação de pipelines RAG (Retrieval-Augmented Generation) e 
+            processos de fine-tuning para modelos de linguagem em domínios específicos.
+          </p>
+        </div>
+
+        <div class="research-card reveal delay-2">
+          <div class="research-card-icon">⚡</div>
+          <h3 class="research-card-title">Chatbots & NLP</h3>
+          <p class="research-card-desc">
+            Construção de chatbots inteligentes com integração a modelos de linguagem, 
+            gerenciamento de contexto e integração com sistemas legados via APIs.
+          </p>
+        </div>
+
+        <div class="research-card reveal delay-3">
+          <div class="research-card-icon">☁️</div>
+          <h3 class="research-card-title">Cloud Architecture</h3>
+          <p class="research-card-desc">
+            Design de arquiteturas serverless e baseadas em containers na AWS, com foco em 
+            escalabilidade automática, alta disponibilidade e otimização de custos.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTATO ==================== -->
+  <section id="contato">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <span class="section-eyebrow reveal">Vamos conversar</span>
+          <h2 class="section-title reveal delay-1">Interessado em colaborar?</h2>
+          <div class="section-divider reveal delay-2"></div>
+          <p class="contact-text reveal delay-2">
+            Estou aberto a projetos desafiadores, pesquisa aplicada e oportunidades de colaboração 
+            em engenharia de software, cloud e inteligência artificial.
+          </p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" class="contact-link reveal delay-2">
+              <i class="fab fa-linkedin-in"></i>
+              <span>/in/leonardo-saverio</span>
+            </a>
+            <a href="mailto:contato@leonardosaverio.dev" class="contact-link reveal delay-3">
+              <i class="fas fa-envelope"></i>
+              <span>contato@leonardosaverio.dev</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link reveal delay-4">
+              <i class="fab fa-github"></i>
+              <span>github.com/leonardosaverio</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal delay-2">
+          <div class="contact-card-icon" style="font-size:2.5rem; margin-bottom:1rem;">🚀</div>
+          <h3 class="contact-card-title">Pronto para um novo projeto?</h3>
+          <p class="contact-card-sub">
+            Arquitetura cloud, pipelines de IA, APIs de alta performance — vamos construir juntos.
+          </p>
+          <div class="contact-card-actions">
+            <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fab fa-linkedin-in"></i> Conectar no LinkedIn
+            </a>
+            <a href="mailto:contato@leonardosaverio.dev" class="btn btn-dark">
+              <i class="fas fa-envelope"></i> Enviar Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">LS<span>.</span></div>
+      <nav class="footer-nav" aria-label="footer navigation">
+        <a href="#sobre">Sobre</a>
+        <a href="#stack">Stack</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#pesquisa">Pesquisa</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2026 Leonardo Savério · Full Stack Developer & AI Researcher</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
