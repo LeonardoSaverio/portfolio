@@ -182,6 +182,9 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  border: 0;
+  padding: 0.5rem;
+  background: transparent;
 }
 
 .hamburger span {
@@ -517,6 +520,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 38%;
 }
 
 .about-avatar-placeholder {
@@ -786,14 +790,14 @@ img { max-width: 100%; display: block; }
 /* ===========================
    AI SECTION
    =========================== */
-#pesquisa {
+#atuacao {
   padding: var(--section-pad);
   background: linear-gradient(135deg, var(--navy) 0%, #004d5e 100%);
   position: relative;
   overflow: hidden;
 }
 
-#pesquisa::before {
+#atuacao::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -1018,4 +1022,28 @@ footer {
 @media (max-width: 480px) {
   :root { --section-pad: 70px 0; }
   .hero-name { font-size: 2.5rem; }
+}
+
+/* Accessibility and concise section intro */
+:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 4px;
+}
+
+.hero-scroll { text-decoration: none; }
+.section-intro {
+  max-width: 680px;
+  margin: 1.25rem auto 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+.confidentiality-note { margin-top: 0.75rem; font-style: italic; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
 }
