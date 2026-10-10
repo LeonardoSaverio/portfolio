@@ -27,14 +27,13 @@
             <a href="#" class="nav-logo">LS<span>.</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#stack">Stack</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#pesquisa">Pesquisa & IA</a></li>
+                <li><a href="#atuacao">Atuação</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
             <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener"
                 class="nav-cta">LinkedIn</a>
-            <button class="hamburger" id="hamburger" aria-label="menu">
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -51,9 +50,7 @@
         <div class="hero-content">
             <span class="hero-eyebrow">Portfólio · Desenvolvedor</span>
             <h1 class="hero-name">Leonardo <span class="highlight">Savério</span></h1>
-            <p class="hero-role">
-                <span id="typedText" class="typed-text"></span>
-            </p>
+            <p class="hero-role">Desenvolvedor Full Stack · Cloud AWS · IA aplicada</p>
             <div class="hero-tags">
                 <span class="hero-tag">Full Stack</span>
                 <span class="hero-tag">Cloud AWS</span>
@@ -73,7 +70,7 @@
                 <a href="https://www.linkedin.com/in/leonardo-saverio/" target="_blank" rel="noopener" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub">
+                <a href="https://github.com/LeonardoSaverio" target="_blank" rel="noopener" aria-label="GitHub de Leonardo Savério">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="mailto:leonardosaverio@hotmail.com" title="Email">
@@ -82,10 +79,10 @@
             </div>
         </div>
 
-        <div class="hero-scroll" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">
-            <div class="scroll-dot"></div>
-            <span>Scroll</span>
-        </div>
+        <a class="hero-scroll" href="#sobre" aria-label="Ir para a seção Sobre">
+            <span class="scroll-dot" aria-hidden="true"></span>
+            <span>Conheça mais</span>
+        </a>
     </section>
 
     <!-- ==================== SOBRE ==================== -->
@@ -280,6 +277,7 @@
                                 interfaces e pipelines de deploy. Colaboração com equipes multidisciplinares para
                                 transformar protótipos em soluções de produção.
                             </p>
+                            <p class="timeline-desc confidentiality-note">Por compromissos de confidencialidade, detalhes de projetos e métricas não são publicados. Posso conversar sobre minha contribuição e decisões técnicas em entrevistas.</p>
                         </div>
 
                         <div class="timeline-item reveal delay-2">
@@ -305,12 +303,11 @@
                         <div class="timeline-item reveal delay-1">
                             <div class="timeline-dot"></div>
                             <span class="timeline-period">Cloud & DevOps</span>
-                            <h4 class="timeline-title">AWS Certified</h4>
-                            <p class="timeline-sub">Amazon Web Services</p>
+                            <h4 class="timeline-title">Experiência prática com AWS</h4>
+                            <p class="timeline-sub">Arquitetura e infraestrutura em nuvem</p>
                             <p class="timeline-desc">
-                                Expertise em serviços de Cloud AWS: ECS, Lambda, Route 53, S3, CloudFront, EC2, Aurora e
-                                RDS,
-                                com foco em arquiteturas escaláveis e de alta disponibilidade.
+                                Atuação com serviços AWS como ECS, Lambda, Route 53, S3, CloudFront, EC2, Aurora e RDS,
+                                aplicados em arquiteturas escaláveis e de alta disponibilidade.
                             </p>
                         </div>
 
@@ -344,16 +341,16 @@
     </section>
 
     <!-- ==================== PESQUISA & IA ==================== -->
-    <section id="pesquisa">
+    <section id="atuacao">
         <div class="container">
             <div style="text-align:center; margin-bottom: 4rem;">
                 <span class="section-eyebrow reveal" style="color:rgba(255,255,255,0.6)">Pesquisa Tecnológica</span>
                 <h2 class="section-title light reveal delay-1">Automação Inteligente & IA</h2>
                 <div class="section-divider reveal delay-2" style="margin: 0 auto 0;"></div>
+                <p class="section-intro reveal delay-2">Áreas de atuação e pesquisa aplicadas ao desenvolvimento de soluções. Projetos e detalhes específicos podem ser compartilhados apenas quando autorizados.</p>
             </div>
 
             <div class="research-grid">
-
                 <div class="research-card reveal">
                     <div class="research-card-icon">🤖</div>
                     <h3 class="research-card-title">Multi-Agent Systems</h3>
@@ -417,8 +414,7 @@
                             <i class="fas fa-envelope"></i>
                             <span>leonardosaverio@hotmail.com</span>
                         </a>
-                        <a href="https://github.com/" target="_blank" rel="noopener"
-                            class="contact-link reveal delay-4">
+                <a href="https://github.com/LeonardoSaverio" target="_blank" rel="noopener" class="contact-link reveal delay-4" aria-label="GitHub de Leonardo Savério">
                             <i class="fab fa-github"></i>
                             <span>github.com/leonardosaverio</span>
                         </a>
@@ -454,7 +450,7 @@
                 <a href="#sobre">Sobre</a>
                 <a href="#stack">Stack</a>
                 <a href="#experiencia">Experiência</a>
-                <a href="#pesquisa">Pesquisa</a>
+                <a href="#atuacao">Atuação</a>
                 <a href="#contato">Contato</a>
             </nav>
             <p class="footer-copy">© 2026 Leonardo Savério · Full Stack Developer & AI Researcher</p>
