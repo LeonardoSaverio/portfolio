@@ -789,14 +789,14 @@ img { max-width: 100%; display: block; }
 /* ===========================
    AI SECTION
    =========================== */
-#pesquisa {
+#atuacao {
   padding: var(--section-pad);
   background: linear-gradient(135deg, var(--navy) 0%, #004d5e 100%);
   position: relative;
   overflow: hidden;
 }
 
-#pesquisa::before {
+#atuacao::before {
   content: '';
   position: absolute;
   inset: 0;
